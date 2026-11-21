@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About GB All Work Solution | Corporate Project Execution Partner</title>
+  <meta name="description" content="Learn about GB All Work Solution, an experienced project execution partner delivering fit-outs, interiors, banking infrastructure, renovation and turnkey solutions." />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { DEFAULT: '#062B57', light: '#0B4F8A', dark: '#041d3d' },
+            orange: { DEFAULT: '#F15A24', light: '#f47a52', dark: '#c94a1a' },
+            gbgray: { DEFAULT: '#F4F7FA', dark: '#e2e8f0' }
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body class="font-body bg-white text-gray-800 antialiased">
+
+  <!-- Preloader -->
+  <div id="preloader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-navy">
+    <div class="text-center">
+      <img src="logo.png" alt="GB All Work Solution" class="w-20 h-20 object-contain mb-4 animate-pulse mx-auto">
+      <div class="w-48 h-1 bg-white/20 rounded-full overflow-hidden">
+        <div class="h-full bg-orange animate-loading-bar rounded-full"></div>
+      </div>
+      <p class="text-white/60 text-sm mt-3 font-heading tracking-widest uppercase">Loading...</p>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scrollProgress" class="fixed top-0 left-0 h-0.5 bg-orange z-[9998] transition-all duration-100" style="width:0%"></div>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="fixed top-0 left-0 right-0 z-[999] transition-all duration-300" id="mainHeader">
+    <!-- Top Bar -->
+    <div class="bg-navy-dark border-b border-white/10 hidden md:block" id="topBar">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex items-center justify-between">
+        <div class="flex items-center gap-6 text-white/70 text-xs">
+          <span class="flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-orange" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+            9204479905 &nbsp;|&nbsp; 8562894985
+          </span>
+          <span class="flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-orange" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+            gballworksolution@gmail.com
+          </span>
+        </div>
+        <div class="flex items-center gap-4 text-white/60 text-xs">
+          <span>GST Registered Business | Registration Number : 08ARJPJ1852BIZ2</span>
+          <span class="text-orange font-medium">Bihar • Jharkhand • UP • WB • Odisha • North East</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Nav -->
+    <nav class="bg-white/95 backdrop-blur-md shadow-sm" id="mainNav">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 md:h-20">
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
+            <img src="logo.png" alt="GB All Work Solution" class="h-10 md:h-12 w-auto object-contain">
+            <div class="hidden sm:block">
+              <div class="text-navy font-heading font-bold text-base leading-tight">GB ALL WORK SOLUTION</div>
+              <div class="text-orange text-xs font-medium tracking-wide">Innovate. Build. Deliver.</div>
+            </div>
+          </a>
+
+          <!-- Desktop Nav -->
+          <div class="hidden lg:flex items-center gap-1">
+            <a href="index.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange transition-colors rounded">Home</a>
+            <a href="about.html" class="nav-link px-3 py-2 text-sm font-medium text-navy hover:text-orange transition-colors rounded active">About Us</a>
+            <!-- Services Dropdown -->
+            <div class="relative group">
+              <a href="services.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange transition-colors rounded flex items-center gap-1">
+                Services
+                <svg class="w-3.5 h-3.5 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </a>
+              <div class="absolute top-full left-0 mt-1 w-64 bg-white rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2 z-50">
+                <div class="p-2">
+                  <a href="services.html#retail-fitouts" class="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-gbgray rounded-lg hover:text-navy transition-colors">
+                    <span class="w-2 h-2 rounded-full bg-orange flex-shrink-0"></span>Corporate Retail Fit-Outs
+                  </a>
+                  <a href="services.html#banking" class="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-gbgray rounded-lg hover:text-navy transition-colors">
+                    <span class="w-2 h-2 rounded-full bg-orange flex-shrink-0"></span>Banking & Financial Infrastructure
+                  </a>
+                  <a href="services.html#office" class="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-gbgray rounded-lg hover:text-navy transition-colors">
+                    <span class="w-2 h-2 rounded-full bg-orange flex-shrink-0"></span>Commercial Office Interiors
+                  </a>
+                  <a href="services.html#renovation" class="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-gbgray rounded-lg hover:text-navy transition-colors">
+                    <span class="w-2 h-2 rounded-full bg-orange flex-shrink-0"></span>Renovation & Refurbishment
+                  </a>
+                  <a href="services.html#turnkey" class="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-gbgray rounded-lg hover:text-navy transition-colors">
+                    <span class="w-2 h-2 rounded-full bg-orange flex-shrink-0"></span>Design–Build–Execute
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a href="capabilities.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange transition-colors rounded">Capabilities</a>
+            <a href="industries.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange transition-colors rounded">Industries</a>
+            <a href="projects.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange transition-colors rounded">Projects</a>
+            <a href="clients.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange transition-colors rounded">Clients</a>
+            <a href="locations.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange transition-colors rounded">Locations</a>
+            <a href="team.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange transition-colors rounded">Team</a>
+          </div>
+
+          <!-- CTA + Hamburger -->
+          <div class="flex items-center gap-3">
+            <a href="https://wa.me/918562894985" target="_blank" class="hidden md:inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 shadow hover:shadow-md">
+              Request Consultation
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+            <button id="hamburger" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+              <span class="ham-line w-6 h-0.5 bg-navy transition-all"></span>
+              <span class="ham-line w-6 h-0.5 bg-navy transition-all"></span>
+              <span class="ham-line w-6 h-0.5 bg-navy transition-all"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="lg:hidden hidden bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 py-4 space-y-1">
+          <a href="index.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-gbgray">Home</a>
+          <a href="about.html" class="block px-4 py-2.5 text-sm font-medium text-navy rounded-lg hover:bg-gbgray">About Us</a>
+          <a href="services.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-gbgray">Services</a>
+          <a href="capabilities.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-gbgray">Capabilities</a>
+          <a href="industries.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-gbgray">Industries</a>
+          <a href="projects.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-gbgray">Projects</a>
+          <a href="clients.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-gbgray">Clients</a>
+          <a href="locations.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-gbgray">Locations</a>
+          <a href="team.html" class="block px-4 py-2.5 text-sm font-medium text-gray-700 rounded-lg hover:bg-gbgray">Our Team</a>
+          <a href="https://wa.me/918562894985" target="_blank" class="block mt-2 text-center bg-orange text-white text-sm font-semibold px-4 py-3 rounded-lg hover:bg-orange-dark transition-colors">Request Consultation</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Spacer for fixed header -->
+  <div class="h-[100px] md:h-[112px]"></div>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="relative py-20 lg:py-32 bg-navy flex items-center justify-center overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img src="extra/ChatGPT Image Sep 22, 2026, 04_18_57 PM.png" alt="About Us" class="w-full h-full object-cover opacity-25">
+      <div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-navy/60"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+      <h1 class="font-heading font-black text-white text-4xl md:text-5xl lg:text-6xl mb-4">About Us</h1>
+      <div class="flex items-center justify-center gap-2 text-sm text-white/70">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-orange font-medium">About Us</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT INTRO ==================== -->
+  <section class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <!-- Content -->
+        <div data-aos="fade-right">
+          <span class="inline-block text-orange font-semibold text-sm tracking-widest uppercase mb-3">About GB All Work Solution</span>
+          <h2 class="font-heading font-black text-navy text-3xl md:text-4xl leading-tight mb-6">
+            Building Better Spaces Through Better Execution
+          </h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">
+            <strong class="text-navy">GB ALL WORK SOLUTION</strong> is a corporate project execution and turnkey solutions company serving businesses that require reliable, coordinated and professional physical-space execution.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-8">
+            We specialize in fit-outs, interiors, banking infrastructure, renovation, refurbishment and turnkey project execution.
+          </p>
+          
+          <div class="mb-6">
+            <h4 class="font-heading font-bold text-navy mb-4">Our team brings together experience across:</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gbgray text-navy text-sm font-medium px-4 py-2 rounded-full border border-gray-200">Project Management</span>
+              <span class="bg-gbgray text-navy text-sm font-medium px-4 py-2 rounded-full border border-gray-200">Civil & Interior Execution</span>
+              <span class="bg-gbgray text-navy text-sm font-medium px-4 py-2 rounded-full border border-gray-200">Banking Infrastructure</span>
+              <span class="bg-gbgray text-navy text-sm font-medium px-4 py-2 rounded-full border border-gray-200">Electrical Systems</span>
+              <span class="bg-gbgray text-navy text-sm font-medium px-4 py-2 rounded-full border border-gray-200">Networking</span>
+              <span class="bg-gbgray text-navy text-sm font-medium px-4 py-2 rounded-full border border-gray-200">Procurement</span>
+              <span class="bg-gbgray text-navy text-sm font-medium px-4 py-2 rounded-full border border-gray-200">Vendor Management</span>
+              <span class="bg-gbgray text-navy text-sm font-medium px-4 py-2 rounded-full border border-gray-200">Site Coordination</span>
+              <span class="bg-gbgray text-navy text-sm font-medium px-4 py-2 rounded-full border border-gray-200">Commercial Interiors</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Images Grid -->
+        <div class="relative" data-aos="fade-left">
+          <div class="grid grid-cols-2 gap-4">
+            <img src="extra/ChatGPT Image Sep 22, 2026, 02_28_04 PM.png" alt="Execution Area" class="rounded-2xl w-full h-64 object-cover shadow-lg transform translate-y-8">
+            <img src="extra/ChatGPT Image Sep 22, 2026, 02_40_38 PM.png" alt="Office Space" class="rounded-2xl w-full h-64 object-cover shadow-lg">
+          </div>
+          <!-- Decorative element -->
+          <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-orange/10 rounded-full -z-10 blur-2xl"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VISION & MISSION ==================== -->
+  <section class="py-20 bg-gbgray">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Vision -->
+        <div class="bg-white rounded-3xl p-10 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow relative overflow-hidden group" data-aos="fade-up" data-aos-delay="0">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-orange/5 rounded-bl-full -z-10 group-hover:bg-orange/10 transition-colors"></div>
+          <div class="w-14 h-14 rounded-2xl bg-orange/10 flex items-center justify-center mb-6 text-orange group-hover:bg-orange group-hover:text-white transition-colors duration-300">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+          </div>
+          <h3 class="font-heading font-bold text-navy text-2xl mb-4">Our Vision</h3>
+          <p class="text-navy font-semibold text-lg leading-relaxed mb-4">To become a trusted multi-region project execution partner for businesses seeking quality, reliability and professional delivery.</p>
+          <p class="text-gray-600">We aim to build long-term relationships by consistently delivering spaces that support our clients' operational and business objectives.</p>
+        </div>
+
+        <!-- Mission -->
+        <div class="bg-navy rounded-3xl p-10 shadow-sm border border-navy-light hover:shadow-lg transition-shadow relative overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-bl-full -z-10 group-hover:bg-white/10 transition-colors"></div>
+          <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center mb-6 text-white group-hover:bg-orange transition-colors duration-300">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+          </div>
+          <h3 class="font-heading font-bold text-white text-2xl mb-4">Our Mission</h3>
+          <p class="text-white/80 font-medium mb-4">To deliver professionally managed spaces through:</p>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3 text-white/70">
+              <span class="w-2 h-2 rounded-full bg-orange"></span> Quality execution
+            </li>
+            <li class="flex items-center gap-3 text-white/70">
+              <span class="w-2 h-2 rounded-full bg-orange"></span> Transparent coordination
+            </li>
+            <li class="flex items-center gap-3 text-white/70">
+              <span class="w-2 h-2 rounded-full bg-orange"></span> Efficient procurement
+            </li>
+            <li class="flex items-center gap-3 text-white/70">
+              <span class="w-2 h-2 rounded-full bg-orange"></span> Skilled project management
+            </li>
+            <li class="flex items-center gap-3 text-white/70">
+              <span class="w-2 h-2 rounded-full bg-orange"></span> Reliable vendor networks
+            </li>
+            <li class="flex items-center gap-3 text-white/70">
+              <span class="w-2 h-2 rounded-full bg-orange"></span> Cost-conscious planning
+            </li>
+            <li class="flex items-center gap-3 text-white/70">
+              <span class="w-2 h-2 rounded-full bg-orange"></span> Timely project completion
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== OUR APPROACH ==================== -->
+  <section class="py-20 md:py-28 bg-navy text-white text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div data-aos="fade-up">
+        <span class="inline-block text-orange font-semibold text-sm tracking-widest uppercase mb-3">Our Approach</span>
+        <h2 class="font-heading font-black text-3xl md:text-4xl leading-tight mb-6">
+          We believe successful projects require more than individual contractors.
+        </h2>
+        <p class="text-white/70 text-lg mb-12 max-w-3xl mx-auto">
+          That is why we work as an integrated execution partner throughout the project lifecycle. They require:
+        </p>
+
+        <div class="flex flex-wrap justify-center items-center gap-4 lg:gap-8 max-w-4xl mx-auto">
+          <div class="bg-white/10 backdrop-blur px-6 py-3 rounded-xl font-heading font-bold tracking-wide border border-white/20">Planning</div>
+          <div class="text-orange text-2xl font-bold">+</div>
+          <div class="bg-white/10 backdrop-blur px-6 py-3 rounded-xl font-heading font-bold tracking-wide border border-white/20">Coordination</div>
+          <div class="text-orange text-2xl font-bold">+</div>
+          <div class="bg-orange px-6 py-3 rounded-xl font-heading font-bold tracking-wide shadow-lg text-white">Execution</div>
+          <div class="text-orange text-2xl font-bold">+</div>
+          <div class="bg-white/10 backdrop-blur px-6 py-3 rounded-xl font-heading font-bold tracking-wide border border-white/20">Quality</div>
+          <div class="text-orange text-2xl font-bold">+</div>
+          <div class="bg-white/10 backdrop-blur px-6 py-3 rounded-xl font-heading font-bold tracking-wide border border-white/20">Accountability</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CORE VALUES ==================== -->
+  <section class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-aos="fade-up">
+        <span class="inline-block text-orange font-semibold text-sm tracking-widest uppercase mb-3">Core Values</span>
+        <h2 class="font-heading font-black text-navy text-4xl md:text-5xl mb-4">Our Core Values</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">The principles that guide our work, our relationships and our project execution standards.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="bg-gbgray rounded-2xl p-8 hover:-translate-y-1 transition-transform" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-12 h-12 rounded-xl bg-orange/10 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-navy text-xl mb-3">Quality</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">We focus on workmanship, materials and finishing.</p>
+        </div>
+
+        <div class="bg-gbgray rounded-2xl p-8 hover:-translate-y-1 transition-transform" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-12 h-12 rounded-xl bg-orange/10 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-navy text-xl mb-3">Integrity</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">We believe in transparent and professional business relationships.</p>
+        </div>
+
+        <div class="bg-gbgray rounded-2xl p-8 hover:-translate-y-1 transition-transform" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-12 h-12 rounded-xl bg-orange/10 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-navy text-xl mb-3">Accountability</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">We take ownership of project coordination and execution.</p>
+        </div>
+
+        <div class="bg-gbgray rounded-2xl p-8 hover:-translate-y-1 transition-transform" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-12 h-12 rounded-xl bg-orange/10 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-navy text-xl mb-3">Collaboration</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">We work closely with clients, vendors and project stakeholders.</p>
+        </div>
+
+        <div class="bg-gbgray rounded-2xl p-8 hover:-translate-y-1 transition-transform" data-aos="fade-up" data-aos-delay="400">
+          <div class="w-12 h-12 rounded-xl bg-orange/10 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-navy text-xl mb-3">Efficiency</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">We focus on practical planning, resource management and timely execution.</p>
+        </div>
+
+        <div class="bg-gbgray rounded-2xl p-8 hover:-translate-y-1 transition-transform" data-aos="fade-up" data-aos-delay="500">
+          <div class="w-12 h-12 rounded-xl bg-orange/10 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-navy text-xl mb-3">Long-Term Partnerships</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">We aim to build relationships beyond individual projects.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== STATS BAR ==================== -->
+  <section class="bg-navy py-12 border-t border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:divide-x divide-white/10">
+        <div class="text-center md:pl-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="text-3xl md:text-4xl font-black text-orange font-heading counter" data-target="12">0</div>
+          <div class="text-white/60 text-sm mt-1 font-medium">Clients Served</div>
+        </div>
+        <div class="text-center md:pl-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-3xl md:text-4xl font-black text-orange font-heading counter" data-target="6">0</div>
+          <div class="text-white/60 text-sm mt-1 font-medium">States Covered</div>
+        </div>
+        <div class="text-center md:pl-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-3xl md:text-4xl font-black text-orange font-heading"><span class="counter" data-target="20">0</span>+</div>
+          <div class="text-white/60 text-sm mt-1 font-medium">Years Leadership Exp.</div>
+        </div>
+        <div class="text-center md:pl-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-3xl md:text-4xl font-black text-orange font-heading counter" data-target="5">0</div>
+          <div class="text-white/60 text-sm mt-1 font-medium">Service Verticals</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA SECTION ==================== -->
+  <section class="py-20 bg-orange text-center px-4">
+    <div class="max-w-3xl mx-auto" data-aos="zoom-in">
+      <h2 class="font-heading font-black text-white text-3xl md:text-4xl mb-6">Ready to Partner With Us?</h2>
+      <p class="text-white/90 text-lg mb-8">Discuss your project requirements with our expert team and discover how we can deliver excellence for your business.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="contact.html" class="inline-flex items-center justify-center gap-2 bg-white text-orange font-bold px-8 py-4 rounded-xl shadow-lg hover:bg-gray-50 transition-colors">
+          Get Consultation
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+        <a href="services.html" class="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-bold px-8 py-4 rounded-xl hover:bg-white hover:text-orange transition-colors">
+          View Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-navy pt-16 pb-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        <!-- Brand Column -->
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="logo.png" alt="GB All Work Solution" class="h-12 w-auto object-contain">
+            <div>
+              <div class="text-white font-heading font-bold text-base leading-tight">GB ALL WORK SOLUTION</div>
+              <div class="text-orange text-xs font-medium tracking-wide">Innovate. Build. Deliver.</div>
+            </div>
+          </div>
+          <p class="text-white/50 text-sm leading-relaxed mb-6 max-w-sm">End-to-end project execution, interiors, infrastructure and turnkey solutions for modern business spaces.</p>
+          <div class="space-y-2">
+            <div class="flex items-center gap-2 text-white/60 text-sm">
+              <svg class="w-4 h-4 text-orange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+              <a href="tel:9204479905" class="hover:text-white transition-colors">9204479905</a>
+              <span class="text-white/30">|</span>
+              <a href="tel:8562894985" class="hover:text-white transition-colors">8562894985</a>
+            </div>
+            <div class="flex items-center gap-2 text-white/60 text-sm">
+              <svg class="w-4 h-4 text-orange flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+              <a href="mailto:gballworksolution@gmail.com" class="hover:text-white transition-colors">gballworksolution@gmail.com</a>
+            </div>
+          </div>
+          <div class="mt-4 text-white/40 text-xs">GST Registered Business | Registration Number : 08ARJPJ1852BIZ2</div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-heading font-bold text-sm tracking-widest uppercase mb-5">Quick Links</h4>
+          <ul class="space-y-2.5">
+            <li><a href="index.html" class="text-white/50 text-sm hover:text-orange transition-colors hover:pl-1 inline-block transition-all">Home</a></li>
+            <li><a href="about.html" class="text-white/50 text-sm hover:text-orange transition-colors hover:pl-1 inline-block transition-all">About Us</a></li>
+            <li><a href="services.html" class="text-white/50 text-sm hover:text-orange transition-colors hover:pl-1 inline-block transition-all">Services</a></li>
+            <li><a href="industries.html" class="text-white/50 text-sm hover:text-orange transition-colors hover:pl-1 inline-block transition-all">Industries</a></li>
+            <li><a href="projects.html" class="text-white/50 text-sm hover:text-orange transition-colors hover:pl-1 inline-block transition-all">Projects</a></li>
+            <li><a href="clients.html" class="text-white/50 text-sm hover:text-orange transition-colors hover:pl-1 inline-block transition-all">Clients</a></li>
+            <li><a href="locations.html" class="text-white/50 text-sm hover:text-orange transition-colors hover:pl-1 inline-block transition-all">Locations</a></li>
+            <li><a href="team.html" class="text-white/50 text-sm hover:text-orange transition-colors hover:pl-1 inline-block transition-all">Our Team</a></li>
+            <li><a href="contact.html" class="text-white/50 text-sm hover:text-orange transition-colors hover:pl-1 inline-block transition-all">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="text-white font-heading font-bold text-sm tracking-widest uppercase mb-5">Services</h4>
+          <ul class="space-y-2.5">
+            <li><a href="services.html#retail-fitouts" class="text-white/50 text-sm hover:text-orange transition-colors">Corporate Retail Fit-Outs</a></li>
+            <li><a href="services.html#banking" class="text-white/50 text-sm hover:text-orange transition-colors">Banking Infrastructure</a></li>
+            <li><a href="services.html#office" class="text-white/50 text-sm hover:text-orange transition-colors">Commercial Interiors</a></li>
+            <li><a href="services.html#renovation" class="text-white/50 text-sm hover:text-orange transition-colors">Renovation & Refurbishment</a></li>
+            <li><a href="services.html#turnkey" class="text-white/50 text-sm hover:text-orange transition-colors">Design–Build–Execute</a></li>
+            <li><a href="capabilities.html" class="text-white/50 text-sm hover:text-orange transition-colors">Execution Capabilities</a></li>
+          </ul>
+        </div>
+
+        <!-- Offices -->
+        <div>
+          <h4 class="text-white font-heading font-bold text-sm tracking-widest uppercase mb-5">Offices</h4>
+          <div class="space-y-4">
+            <div>
+              <div class="text-orange text-xs font-semibold uppercase mb-1.5">Head Office</div>
+              <p class="text-white/50 text-sm leading-relaxed">Plot No: 13, 13-A, 1-2, Ganesham Town, Niwaru Road, Lanchandpura, Jaipur, Rajasthan – 302012</p>
+            </div>
+            <div>
+              <div class="text-orange text-xs font-semibold uppercase mb-1.5">Branch Office</div>
+              <p class="text-white/50 text-sm leading-relaxed">Ram Janki Complex, Patel Chowk, Vijay Nagar, Bailey Road, Patna – 800014</p>
+            </div>
+            <div>
+              <div class="text-orange text-xs font-semibold uppercase mb-1.5">Service Areas</div>
+              <p class="text-white/50 text-xs leading-relaxed">Bihar | Jharkhand | UP | West Bengal | Odisha | North East</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex flex-col md:flex-row items-center gap-4">
+          <p class="text-white/40 text-xs">© 2026 GB ALL WORK SOLUTION. All Rights Reserved.</p>
+          <div class="flex items-center gap-4 text-white/30 text-xs">
+            <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+            <span>|</span>
+            <a href="terms.html" class="hover:text-white transition-colors">Terms & Conditions</a>
+            <span>|</span>
+            <a href="disclaimer.html" class="hover:text-white transition-colors">Disclaimer</a>
+          </div>
+        </div>
+        <div class="text-center md:text-right">
+          <p class="text-white/40 text-xs">
+            Designed & Developed by 
+            <a href="https://vayoda.com" target="_blank" rel="noopener" class="text-orange hover:text-orange-light font-semibold transition-colors">Vayoda Private Limited</a>
+          </p>
+          <p class="text-white/25 text-xs mt-0.5">Digital Solutions • Technology • Business Growth</p>
+        </div>
+      </div>
+
+      <!-- Tagline bar -->
+      <div class="border-t border-white/5 py-4 text-center">
+        <p class="text-white/20 text-xs font-heading font-bold tracking-[0.3em] uppercase">BUILDING SPACES. DELIVERING EXCELLENCE.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-orange text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:bg-orange-dark hover:-translate-y-1 z-50">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+  </button>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
